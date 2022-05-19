@@ -108,3 +108,21 @@ class HomeHeaderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+struct HomeHeaderViewConfiguration {
+    let amountLabel: String?
+    let savingsLabel: String?
+    let savingsValueLabel: String?
+    let spendingLabel: String?
+    let spendingValueLabel: String?
+}
+
+extension HomeHeaderView {
+    func configure(with configuraton: HomeHeaderViewConfiguration) {
+        label.text = configuraton.amountLabel
+        savingsLabel.text = configuraton.savingsLabel
+        savingsValueLabel.text = configuraton.savingsValueLabel
+        spendingLabel.text = configuraton.spendingLabel
+        spendingValueLabel.text = configuraton.spendingValueLabel
+    }
+}

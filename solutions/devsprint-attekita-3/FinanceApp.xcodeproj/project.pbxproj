@@ -57,8 +57,9 @@
 		F8B74C2128330AEC002EEE0A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B74C2028330AEC002EEE0A /* ApiError.swift */; };
 		F8B74C22283314B5002EEE0A /* transfer_amount_endpoint_false.json in Resources */ = {isa = PBXBuildFile; fileRef = F8A0B1B3282EFCAF00E52869 /* transfer_amount_endpoint_false.json */; };
 		F8B74C23283314B8002EEE0A /* transfer_successful_endpoint.json in Resources */ = {isa = PBXBuildFile; fileRef = F8A0B1B5282EFCC200E52869 /* transfer_successful_endpoint.json */; };
-		F8B74C2428331C46002EEE0A /* activity_details_endpoint.json in Resources */ = {isa = PBXBuildFile; fileRef = D9B4FFBB282A11F900EC6A62 /* activity_details_endpoint.json */; };
 		F8C98F00282C5947004CC7E5 /* UITableViewCellExtentionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C98EFF282C5947004CC7E5 /* UITableViewCellExtentionsTests.swift */; };
+		F8E3C25428358F930042BA5F /* HomeHeaderViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E3C25328358F930042BA5F /* HomeHeaderViewSnapshotTests.swift */; };
+		F8E3C257283595440042BA5F /* SnapshotMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E3C256283595440042BA5F /* SnapshotMockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		F8A0B1B5282EFCC200E52869 /* transfer_successful_endpoint.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transfer_successful_endpoint.json; sourceTree = "<group>"; };
 		F8B74C2028330AEC002EEE0A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		F8C98EFF282C5947004CC7E5 /* UITableViewCellExtentionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtentionsTests.swift; sourceTree = "<group>"; };
+		F8E3C25328358F930042BA5F /* HomeHeaderViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewSnapshotTests.swift; sourceTree = "<group>"; };
+		F8E3C256283595440042BA5F /* SnapshotMockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotMockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,7 @@
 		98584A82277E32C60028DBEA /* FinanceAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8E3C255283595200042BA5F /* SnapshotTest */,
 				F8982385282C48BB00304124 /* Extensions */,
 				D9B4FFB42829FD3300EC6A62 /* Service */,
 				D9B4FFB12829FC6700EC6A62 /* Mocks */,
@@ -419,6 +423,15 @@
 				F8A0B1B5282EFCC200E52869 /* transfer_successful_endpoint.json */,
 			);
 			path = TransferAmount;
+			sourceTree = "<group>";
+		};
+		F8E3C255283595200042BA5F /* SnapshotTest */ = {
+			isa = PBXGroup;
+			children = (
+				F8E3C25328358F930042BA5F /* HomeHeaderViewSnapshotTests.swift */,
+				F8E3C256283595440042BA5F /* SnapshotMockViewController.swift */,
+			);
+			path = SnapshotTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -686,12 +699,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E3C257283595440042BA5F /* SnapshotMockViewController.swift in Sources */,
 				B73A0670282F1046004C2162 /* FinanceServiceTests.swift in Sources */,
 				B92093D8282DBD5500F57258 /* StringExtensionTest.swift in Sources */,
 				B71B6CF7282C700E0060CC8A /* UIViewControllerExtensionTests.swift in Sources */,
 				F8C98F00282C5947004CC7E5 /* UITableViewCellExtentionsTests.swift in Sources */,
 				98584A84277E32C60028DBEA /* FinanceAppTests.swift in Sources */,
 				D9B4FFB32829FC8700EC6A62 /* NetworkClientMock.swift in Sources */,
+				F8E3C25428358F930042BA5F /* HomeHeaderViewSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
